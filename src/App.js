@@ -2,13 +2,14 @@ import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
 
-import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
+// import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/Header/Header'
-import SignUp from './components/SignUp/SignUp'
-import SignIn from './components/SignIn/SignIn'
-import SignOut from './components/SignOut/SignOut'
-import ChangePassword from './components/ChangePassword/ChangePassword'
+import About from './components/About/About'
+import Skills from './components/Skills/Skills'
+import Portfolio from './components/Portfolio/Portfolio'
+import Hobbies from './components/Hobbies/Hobbies'
+import Contact from './components/Contact/Contact'
 
 class App extends Component {
   constructor () {
@@ -53,17 +54,20 @@ class App extends Component {
           />
         ))}
         <main className="container">
-          <Route path='/sign-up' render={() => (
-            <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
+          <Route path='/about' render={() => (
+            <About msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
-          <Route path='/sign-in' render={() => (
-            <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
+          <Route path='/skills' render={() => (
+            <Skills msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
-          <AuthenticatedRoute user={user} path='/sign-out' render={() => (
-            <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
+          <Route path='/portfolio' render={() => (
+            <Portfolio msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
-          <AuthenticatedRoute user={user} path='/change-password' render={() => (
-            <ChangePassword msgAlert={this.msgAlert} user={user} />
+          <Route path='/Hobbies' render={() => (
+            <Hobbies msgAlert={this.msgAlert} setUser={this.setUser} />
+          )} />
+          <Route path='/contact' render={() => (
+            <Contact msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
         </main>
       </Fragment>
