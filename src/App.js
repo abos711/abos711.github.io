@@ -4,11 +4,12 @@ import { v4 as uuid } from 'uuid'
 
 // import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
-import Header from './components/Header/Header'
+import Header from './components/HeaderFooter/Header'
+import Home from './components/Home/Home'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Portfolio from './components/Portfolio/Portfolio'
-import Hobbies from './components/Hobbies/Hobbies'
+import Resume from './components/Resume/Resume'
 import Contact from './components/Contact/Contact'
 
 class App extends Component {
@@ -54,6 +55,9 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' render={() => (
+            <Home msgAlert={this.msgAlert} setUser={this.setUser} />
+          )} />
           <Route path='/about' render={() => (
             <About msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
@@ -63,8 +67,8 @@ class App extends Component {
           <Route path='/portfolio' render={() => (
             <Portfolio msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
-          <Route path='/Hobbies' render={() => (
-            <Hobbies msgAlert={this.msgAlert} setUser={this.setUser} />
+          <Route path='/resume' render={() => (
+            <Resume msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
           <Route path='/contact' render={() => (
             <Contact msgAlert={this.msgAlert} setUser={this.setUser} />

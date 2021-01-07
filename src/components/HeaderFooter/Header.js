@@ -12,25 +12,23 @@ import Navbar from 'react-bootstrap/Navbar'
 const alwaysOptions = (
   <Fragment>
     <Nav.Link href="#/">Home</Nav.Link>
-    <Nav.Link href="#About">About</Nav.Link>
-    <Nav.Link href="#Skills">Skills</Nav.Link>
     <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-    <Nav.Link href="#Hobbies">Hobbies</Nav.Link>
-    <Nav.Link href="#Contact">Lets Connect</Nav.Link>
+    <Nav.Link href="#Resume">Resume</Nav.Link>
+    <Nav.Link href="#Skills">Skills</Nav.Link>
+    <Nav.Link href="#About">About</Nav.Link>
   </Fragment>
 )
 
 // Insert drop down icon
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar bg="dark" variant="dark" expand="lg">
     <Navbar.Brand href="#">
       Alexander Bos
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
         { alwaysOptions }
       </Nav>
     </Navbar.Collapse>
