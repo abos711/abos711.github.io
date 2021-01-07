@@ -6,8 +6,7 @@ function About (props) {
       <h1 id="title">About Me</h1>
 
       <div className="shadow p-3 mb-5 bg-white rounded">
-        <img src="https://i.imgur.com/92QV2DIb.jpg" className="img-fluid" id="aboutpic" alt="profile pic"></img>
-        <p> Digitally aged full stack software engineer convert with exceptional analytical and problem-solving skills. A former real estate professional with a decade of experience, highly accomplished in a team setting. Offering entrepreneurial adaptability and heightened attention to detail.
+        <p> Your story here and your transition into software engineering
         </p>
       </div>
 
