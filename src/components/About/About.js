@@ -6,7 +6,7 @@ function About (props) {
       <h1 id="title">About Me</h1>
 
       <div className="shadow p-3 mb-5 bg-white rounded">
-        <p> The world is shifting from physical to digital faster than we ever imagined. As an experienced real estate professional with over a decade experience, I can not shake the feeling that if I do not adapt, I will be forced to. We are one algorithm away from the acquisition world being replaced and the writing is already on the wall for the brokerage community. Making a career change in your thirties when you have a family is petrifying. There is no other way to explain it, but COVID convinced me to do the thing I have be talking about for years.
+        <p> The world is shifting from physical to digital faster than we ever imagined. As an experienced real estate professional with over a decade experience, I can not shake the feeling that if I do not adapt, I will be forced to. We are one algorithm away from the acquisition world being replaced. Making a career change in your thirties when you have a family is petrifying. There is no other way to explain it, but COVID convinced me to do the thing I have be talking about for years.
         </p>
         <p>During the pandemic, I took the proper time to speak with tech professionals to gauge my best career path. To dissect the pros and cons of sales, data science, solutions engineering, software engineering, business operations, finance, etc. I completed the General Assemblys software engineering immersive in January, 2021 where I have learned JavaScript and Python programming languages and successfully built and deployed four projects. I am eager and excited to explore and build more.
         </p>
