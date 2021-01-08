@@ -4,5 +4,16 @@ body {
   align-items: center;
   text-align: center;
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+}
+
+#resume {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  padding-right: 30px;
+  text-align: right;
+  justify-content: flex-end;
+  height: auto;
 }

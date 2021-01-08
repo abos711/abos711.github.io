@@ -5,6 +5,7 @@ import { v4 as uuid } from 'uuid'
 // import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/HeaderFooter/Header'
+import Footer from './components/HeaderFooter/Footer'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
@@ -74,6 +75,7 @@ class App extends Component {
             <Contact msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
         </main>
+        <Footer/>
       </Fragment>
     )
   }
