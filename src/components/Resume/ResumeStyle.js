@@ -4,11 +4,13 @@ import Resume from './Resume'
 const ResumeStyle = () => {
   const resumeStyles = {
     display: 'flex',
+    text: '16px',
     justifyContent: 'center',
     alignItems: 'center',
-    background: 'radial-gradient(circle, LightSkyBlue 50%, HotPink 90%)',
-    color: 'White',
-    width: '60vh'
+    background: 'White',
+    color: 'gray',
+    width: 'auto',
+    height: 'auto'
   }
   return (
     <div style={resumeStyles}>

@@ -10,7 +10,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Portfolio from './components/Portfolio/Portfolio'
-import Resume from './components/Resume/Resume'
+import ResumeStyle from './components/Resume/ResumeStyle'
 import Contact from './components/Contact/Contact'
 
 class App extends Component {
@@ -69,7 +69,7 @@ class App extends Component {
             <Portfolio msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
           <Route path='/resume' render={() => (
-            <Resume msgAlert={this.msgAlert} setUser={this.setUser} />
+            <ResumeStyle msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
           <Route path='/contact' render={() => (
             <Contact msgAlert={this.msgAlert} setUser={this.setUser} />

@@ -4,6 +4,7 @@ function Skills (props) {
   return (
     <div className="container">
       <h1 id="title">Skills</h1>
+      <img src="https://i.imgur.com/BbI96rF.png" className="img-fluid" id="skillspic" alt="always learning"></img><br/>
       <div className="shadow p-3 mb-5 bg-white rounded">
         <b>Languages</b> <br/>JavaScript, Python, SQL, HTML, CSS <br/>
         <b>Frameworks</b> <br/>React, Django, Express <br/>
