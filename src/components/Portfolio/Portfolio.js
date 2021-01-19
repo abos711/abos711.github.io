@@ -5,7 +5,7 @@ import React from 'react'
 function Portfolio (props) {
   return (
     <div className="container">
-      <h1 id="title">Portfolio</h1>
+      <h1 id="title">General Assembly Portfolio</h1>
 
       <div className="shadow p-3 mb-3 bg-white w-auto rounded">
         <p><a href="https://abos711.github.io/react-auth-capstone/#/">ActiveEmmy</a></p>
